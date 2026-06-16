@@ -3,67 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bumbtomum</title>
+    <title>Bump to Mum | Premium Pregnancy Subscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>From the first bump to the warmest mum.</h1>
 
-<p>
-A premium pregnancy subscription designed to celebrate every stage of motherhood.
-Each month, a carefully curated box arrives at her doorstep filled with love,
-comfort and essentials.
-</p>
+    <div class="announcement-bar">
+        🎁 Pregnancy Gift with Every New Subscription
+    </div>
 
-<a href="#plans" class="btn">Begin Her Journey</a>
-<section id="plans">
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Bump to Mum<span>.</span></a>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#gallery">Gift Boxes</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="https://bumptomum.lovable.app" class="cta-btn">Begin Her Journey</a>
+            <div class="menu-toggle" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
 
-<div class="plan">
-<h2>Silver</h2>
-<p>Essential monthly care box</p>
-</div>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">From the First Bump to the Warmest Mum.</h1>
+                <p class="hero-subtitle">A premium monthly subscription designed to celebrate every stage of motherhood with thoughtfully curated gifts, wellness essentials, and meaningful keepsakes.</p>
+                <a href="https://bumptomum.lovable.app" class="cta-btn gold">Begin Her Journey</a>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="hero-slide slide-1 active">
+                    <div class="slide-overlay-text">The First Trimester Glow</div>
+                </div>
+                <div class="hero-slide slide-2">
+                    <div class="slide-overlay-text">Nurturing Wellness Essentials</div>
+                </div>
+                <div class="hero-slide slide-3">
+                    <div class="slide-overlay-text">Elegant Keepsakes</div>
+                </div>
+                <div class="hero-slide slide-4">
+                    <div class="slide-overlay-text">The Complete Luxury Box</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="plan">
-<h2>Gold</h2>
-<p>Premium wellness & comfort box</p>
-</div>
+    <section id="story" class="our-story">
+        <div class="story-container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Our Story</span>
+                <h2 class="section-title">A Love Letter to Every Mother</h2>
+            </div>
+            <p class="story-text">"Bump to Mum supports mothers throughout pregnancy with monthly curated gift boxes filled with care, comfort, wellness, and memorable keepsakes. We believe that every milestone deserves to be celebrated with the highest touch of luxury."</p>
+            <span class="story-brand">— Bump to Mum Team</span>
+        </div>
+    </section>
 
-<div class="plan">
-<h2>Platinum</h2>
-<p>Luxury motherhood experience</p>
-</div>
+    <section class="how-it-works">
+        <div class="section-title-wrapper">
+            <span class="section-subtitle">The Experience</span>
+            <h2 class="section-title">How It Works</h2>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                <h3>Choose Your Plan</h3>
+                <p>Select from our flexible premium subscription ranges tailored to fit your pregnancy timeline.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+                <h3>Receive Your Monthly Box</h3>
+                <p>A beautifully packaged experience delivered directly to your doorstep each month.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Enjoy Curated Pregnancy Gifts</h3>
+                <p>Unveil organic wellness elements, luxurious skincare, and premium milestone items.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-regular fa-heart"></i></div>
+                <h3>Celebrate Every Milestone</h3>
+                <p>Nurture yourself from the initial trimester right up to your beautiful delivery day.</p>
+            </div>
+        </div>
+    </section>
 
-</section>
-<img id="slider" src="box1.png">
-<a href="https://wa.me/919747117719">
-WhatsApp Us
-</a>
-<a href="https://www.instagram.com/bump_to_mum_?igsh=MTBrbmwxNG13dW55eA==">
-Instagram
-</a>
-<img src="logo.jpeg" alt="Bump to Mom Logo" class="logo">
-<a href="https://bumptomum.lovable.app" target="_blank" class="order-btn">
-    Order Now
-</a>
-<div class="plan">
-  <h2>Silver Plan</h2>
-  <a href="https://bumptomum.lovable.app" target="_blank">
-    Order Silver
-  </a>
-</div>
+    <section id="gallery" class="gallery-section">
+        <div class="section-title-wrapper">
+            <span class="section-subtitle">The Collections</span>
+            <h2 class="section-title">Gift Box Gallery</h2>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-track" id="galleryTrack">
+                <div class="gallery-card">
+                    <div class="gallery-img-holder img-box-1"></div>
+                    <div class="gallery-info">
+                        <h4>The Trimester Radiance Box</h4>
+                        <p>Luxury Skincare & Wellness</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img-holder img-box-2"></div>
+                    <div class="gallery-info">
+                        <h4>The Blooming Mother Box</h4>
+                        <p>Comfort & Elegant Loungewear</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img-holder img-box-3"></div>
+                    <div class="gallery-info">
+                        <h4>The Nesting Keepsakes Box</h4>
+                        <p>Timeless Premium Memories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="plan">
-  <h2>Gold Plan</h2>
-  <a href="https://bumptomum.lovable.app" target="_blank">
-    Order Gold
-  </a>
-</div>
+    <section id="plans" class="plans">
+        <div class="section-title-wrapper">
+            <span class="section-subtitle">Curated Subscriptions</span>
+            <h2 class="section-title">Choose Your Plan</h2>
+        </div>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div>
+                    <h3 class="plan-name">Silver Plan</h3>
+                    <div class="plan-price">$49 <span>/ month</span></div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 3-4 Premium Essentials</li>
+                        <li><i class="fa-solid fa-check"></i> Organic Pregnancy Skincare</li>
+                        <li><i class="fa-solid fa-check"></i> Milestone Tracking Cards</li>
+                        <li><i class="fa-solid fa-check"></i> Standard Luxury Packaging</li>
+                    </ul>
+                </div>
+                <a href="https://bumptomum.lovable.app" class="cta-btn">Order Now</a>
+            </div>
+            <div class="plan-card featured">
+                <div class="badge">Most Loved</div>
+                <div>
+                    <h3 class="plan-name">Gold Plan</h3>
+                    <div class="plan-price">$79 <span>/ month</span></div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 5-6 Full-Sized Luxury Items</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Wellness Products</li>
+                        <li><i class="fa-solid fa-check"></i> Handcrafted Keepsakes</li>
+                        <li><i class="fa-solid fa-check"></i> Signature Premium Packaging</li>
+                        <li><i class="fa-solid fa-check"></i> Free Shipping Worldwide</li>
+                    </ul>
+                </div>
+                <a href="https://bumptomum.lovable.app" class="cta-btn gold">Order Now</a>
+            </div>
+            <div class="plan-card">
+                <div>
+                    <h3 class="plan-name">Platinum Plan</h3>
+                    <div class="plan-price">$119 <span>/ month</span></div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 8+ Premium Luxury Products</li>
+                        <li><i class="fa-solid fa-check"></i> Silk Loungewear & Haute Apothecary</li>
+                        <li><i class="fa-solid fa-check"></i> Bespoke Custom Keepsakes</li>
+                        <li><i class="fa-solid fa-check"></i> VIP Pregnancy Concierge Access</li>
+                        <li><i class="fa-solid fa-check"></i> Limited Edition Gold Foil Boxes</li>
+                    </ul>
+                </div>
+                <a href="https://bumptomum.lovable.app" class="cta-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
 
-<div class="plan">
-  <h2>Platinum Plan</h2>
-  <a href="https://bumptomum.lovable.app" target="_blank">
-    Order Platinum
-  </a>
-</div>
+    <section class="why-choose-us">
+        <div class="section-title-wrapper">
+            <span class="section-subtitle">The Brand Standard</span>
+            <h2 class="section-title">Why Choose Us</h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-item-icon"><i class="fa-solid fa-heart"></i></div>
+                <div>
+                    <h3>Curated with Love</h3>
+                    <p>Every element is hand-selected by mothers and wellness experts with strict attention to safety.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-item-icon"><i class="fa-solid fa-crown"></i></div>
+                <div>
+                    <h3>Premium Quality Products</h3>
+                    <p>We partner only with elite heritage brands and organic ingredient pioneers.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-item-icon"><i class="fa-solid fa-gift"></i></div>
+                <div>
+                    <h3>Beautiful Packaging</h3>
+                    <p>Unboxing is an experience. Our iconic textured rigid boxes stand beautifully as keepsakes.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-item-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div>
+                    <h3>Monthly Surprises</h3>
+                    <p>Tailored surprises keep your pregnancy experience exciting, vibrant, and celebrated.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-item-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                <div>
+                    <h3>Pregnancy Stage Based</h3>
+                    <p>Products grow with you, dynamically serving your exact week and current body demands.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="why-item-icon"><i class="fa-solid fa-gem"></i></div>
+                <div>
+                    <h3>Luxury Experience</h3>
+                    <p>From checkout to customer care, expect an elite tier dedicated entirely to your comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-title-wrapper">
+            <span class="section-subtitle">Real Motherhood Journeys</span>
+            <h2 class="section-title">Loved by Mums</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="review-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="review-text">"Receiving my Bump to Mum box became my favorite ritual. It truly made me feel deeply pampered during a time when my body was working so hard."</p>
+                <div class="reviewer-profile">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" alt="Sophia" class="reviewer-avatar">
+                    <div>
+                        <div class="reviewer-name">Sophia Reynolds</div>
+                        <div class="reviewer-status">Gold Member (Month 7)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="review-text">"The organic skin oils solved all my trimester dryness. The quality of the products completely matches the gorgeous premium luxury aesthetic."</p>
+                <div class="reviewer-profile">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100" alt="Evelyn" class="reviewer-avatar">
+                    <div>
+                        <div class="reviewer-name">Evelyn Vance</div>
+                        <div class="reviewer-status">Platinum Member (New Mum)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="review-text">"My husband gifted this to me, and it's easily the best gift I have received. The keepsakes are items I will genuinely pass down down the line."</p>
+                <div class="reviewer-profile">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100" alt="Victoria" class="reviewer-avatar">
+                    <div>
+                        <div class="reviewer-name">Victoria Thorne</div>
+                        <div class="reviewer-status">Silver Member (Month 5)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-section">
+        <div class="section-title-wrapper">
+            <span class="section-subtitle">Our Social Community</span>
+            <h2 class="section-title">Follow Our Journey</h2>
+        </div>
+        <a href="https://www.instagram.com/bump_to_mum_?igsh=MTBrbmwxNG13dW55eA==" target="_blank" class="insta-btn">
+            <i class="fa-brands fa-instagram"></i> @bump_to_mum_
+        </a>
+        <div class="insta-grid">
+            <div class="insta-card">
+                <div class="insta-img insta-1"></div>
+                <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="insta-card">
+                <div class="insta-img insta-2"></div>
+                <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="insta-card">
+                <div class="insta-img insta-3"></div>
+                <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="insta-card">
+                <div class="insta-img insta-4"></div>
+                <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-title-wrapper">
+            <span class="section-subtitle">Connect With Us</span>
+            <h2 class="section-title">We are Here For You</h2>
+        </div>
+        <div class="contact-container">
+            <p>Have questions about plans, tailoring boxes to specific stages, or gifting choices? Connect with our luxury support team instantly.</p>
+            <div class="contact-methods">
+                <a href="https://wa.me/919747117719" target="_blank" class="contact-card whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Chat via WhatsApp
+                </a>
+                <a href="https://www.instagram.com/bump_to_mum_?igsh=MTBrbmwxNG13dW55eA==" target="_blank" class="contact-card instagram-direct">
+                    <i class="fa-brands fa-instagram"></i> DM on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">Bump to Mum.</div>
+            <p class="footer-quote">"Celebrating Every Stage of Motherhood"</p>
+            
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#gallery">Gift Boxes</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer-bottom">
+                &copy; 2026 Bump to Mum. All Rights Reserved. Checkout our digital flagship <a href="https://bumptomum.lovable.app">Order Site</a>.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
