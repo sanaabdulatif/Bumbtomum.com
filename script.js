@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // 1. HERO SLIDESHOW: Automatic fading transitions
+    // 1. HERO SLIDESHOW: Cycles cleanly through box1, box2, box3, box4
     const heroSlides = document.querySelectorAll('.hero-slide');
     let currentHeroSlide = 0;
-    const heroIntervalTime = 4000; // Change slide every 4 seconds
+    const heroIntervalTime = 3500; // Transitions smoothly every 3.5 seconds
 
     function nextHeroSlide() {
+        if(heroSlides.length === 0) return;
         heroSlides[currentHeroSlide].classList.remove('active');
         currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
         heroSlides[currentHeroSlide].classList.add('active');
@@ -16,22 +17,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    // 2. GIFT BOX CAROUSEL: Automatic horizontal rolling loop
+    // 2. GIFT BOX GALLERY: Automatically transitions items horizontally
     const galleryTrack = document.getElementById('galleryTrack');
     let scrollPosition = 0;
-    const galleryIntervalTime = 3500; // Rotate card focus every 3.5 seconds
+    const galleryIntervalTime = 3000; // Continuous elegant rotation loop
 
     function autoRotateGallery() {
         const galleryCards = document.querySelectorAll('.gallery-card');
-        if(galleryCards.length === 0) return;
+        if(galleryCards.length === 0 || !galleryTrack) return;
 
-        // Dynamically compute layout metrics
-        const cardWidth = galleryCards[0].offsetWidth + 30; // Card width + CSS flex gap
+        const cardWidth = galleryCards[0].offsetWidth + 30; // Matches card width + layout gaps
         const maxScrollableWidth = galleryTrack.scrollWidth - galleryTrack.parentElement.offsetWidth;
         
         scrollPosition += cardWidth;
         
-        // Loop back smoothly if reached the layout's edge bounds
         if (scrollPosition > maxScrollableWidth + 10) {
             scrollPosition = 0;
         }
@@ -44,15 +43,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    // 3. MOBILE MOBILE NAVIGATION DRAWER TOGGLE
+    // 3. MOBILE MENU COLLAPSIBLE INTERACTION
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navMenu = document.getElementById('navMenu');
 
     if(mobileMenuBtn && navMenu) {
         mobileMenuBtn.addEventListener('click', function() {
             navMenu.classList.toggle('active');
-            
-            // Toggle hamburger icon appearance
             const icon = mobileMenuBtn.querySelector('i');
             if(navMenu.classList.contains('active')) {
                 icon.className = "fa-solid fa-xmark";
@@ -61,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Close menu panel automatically when clicking any link
+        // Autoclose navigation panel upon linking
         const navLinks = navMenu.querySelectorAll('a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
